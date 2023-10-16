@@ -1,3 +1,111 @@
 body {
     background-color: #79e2f5;
 }
+
+a {
+    color: blue;
+}
+
+    a.list1 {
+        color: #FFBB00;
+    }
+
+    a.list2 {
+        color: #800000;
+    }
+
+#exam10 {
+    color: #56c500;
+}
+
+p.ex4 {
+    color: #00ff00;
+}
+
+p.ex5 {
+    color: #00ff00;
+    background-color: #ff0000;
+}
+
+
+
+body.body5 {
+    background-image: url("D:/Work/Front/Serhii_IPZ-13_Prilepsky/front_end_Prilepsky/lab3_PRILEPSKY/images/ball.jpg");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+p.ex6 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif
+}
+h1.ex7 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+}
+
+h2.ex7 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+}
+
+p.ex7 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: oblique;
+}
+p.ex8 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-variant: small-caps;
+}
+p.ex9 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600
+}
+h1.ex10 {
+    font-family: Arial, Candara, Century-Gothic, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h2.ex10 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+    font-size: 100pt;
+}
+
+h3.ex10 {
+    font-family: Times New Roman, Georgia, serif;
+    font-style: italic;
+    font-size: 120%;
+}
+
+p.ex10 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+}
+p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+}
+p {
+    font: italic bold 30px arial, sans-serif;
+}
+    p.ex10 {
+        text-indent: 3pt;
+        text-align: justify;
+        text-decoration: line-through;
+
+    }
+    p.ex10 {
+        letter-spacing: 2em;
+    }
+#container * {
+    border: 1px solid black;
+}
+
+
