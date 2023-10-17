@@ -30,7 +30,7 @@ p.ex5 {
 
 
 body.body5 {
-    background-image: url("https://github.com/000pril/lab3_PRILEPSKY/raw/main/images/ball.jpg");
+    background-image: url("../images/ball.jpg");
     background-repeat: repeat-x;
     background-attachment: fixed;
 }
