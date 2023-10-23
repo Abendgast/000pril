@@ -1,0 +1,162 @@
+.table1, .table2, .table3, .table4, .table5, .table6, .table7, .table8 {
+    caption-side: bottom;
+}
+
+.table1, .table4 {
+    margin: auto;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.table1 {
+    height: 200px;
+    width: 40%;
+    border: 5px solid purple;
+}
+
+.table1 th, .table1 td {
+    border: 1px solid purple;
+    padding: 5px;
+}
+
+.table1 td {
+    text-align: right;
+    vertical-align: top;
+}
+
+.tr1 {
+    height: 150px;
+}
+
+.th1 {
+    width: 150px;
+}
+
+.table2 {
+    padding: 0;
+    width: 50%;
+    border: 1px solid green;
+    border-spacing: 1em;
+}
+
+.table2 td {
+    border: 1px solid green;
+}
+
+.table3 {
+    width: 80%;
+    border: 2px solid red;
+    border-spacing: 1.5em;
+}
+
+.table3 td {
+    border: 2px solid red;
+}
+
+#td1 {
+    border: 2px solid aqua;
+}
+
+#td6 {
+    border: 2px solid green;
+}
+
+.table4 {
+    height: 80px;
+    width: 50%;
+    border: 1px solid green;
+}
+
+.table4 th, .table4 td {
+    padding: 0.5em 0.5em;
+    border: 1px solid green;
+}
+
+#th46 {
+    color: pink;
+}
+
+#th41 {
+    color: blue;
+}
+
+.table5 {
+    width: 50%;
+    border-color: pink;
+}
+
+.table5 tr:last-child {
+    text-align: center;
+    background-color: rgb(131, 218, 1);
+}
+
+.table5 tr:nth-child(2) td:nth-child(2) {
+    text-align: center;
+    background-color: greenyellow;
+}
+
+.table6 {
+    border-collapse : collapse ;
+    padding :0 ;
+}
+
+.table6 td, th {
+   border :1px solid black ;
+}
+
+.table61 {
+   text-align : center ;
+}
+
+.table7 {
+   margin : auto ;
+   width :50% ;
+   border :2px solid blue ;
+   border-spacing :0 ;
+}
+
+.table7 td{
+   border :2px solid blue ;
+}
+
+.table7 tr:last-child{
+   height :20px ;
+}
+
+.table7 tr:first-child td:first-child{
+   background-color : lightskyblue ;
+}
+
+.table7 tr:nth-child(3) td{
+   background-color : pink ;
+}
+
+.table7 tr:nth-child(4) td:nth-child(3){
+   background-color : rgba(177,22,130,0.979) ;
+}
+
+.table8{
+   margin : auto ;
+   caption-side : top ;
+   border :1px solid aqua ;
+}
+
+.table8 td{
+   border :1px solid aqua ;
+}
+
+.table8 table{
+   border-collapse : collapse ;
+}
+
+.table81 td{
+   border :2px solid rgba(177,22,130,0.979) ;
+}
+
+.table82 td{
+   border :2px solid purple ;
+}
+/* Доданий CSS код для розміщення тексту під кожною таблицею */
+.caption-text{
+   text-align:center; 
+}
