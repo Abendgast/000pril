@@ -6,5 +6,5 @@ function changeAudio(music, video){
         'groupmates/music/Benzin.mp3': 'groupmates/Video/4.mp4'
     };
     document.getElementById('myAudio').setAttribute('src', music);
-    document.getElementById('myVideo').setAttribute('src', videoMap[music]);
+    document.getElementById('myVideo').children[0].setAttribute('src', videoMap[music]);
 }
