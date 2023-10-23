@@ -1,4 +1,10 @@
 function changeAudio(music, video){
-    document.getElementById('myAudio').setAttribute('src', music)
-    document.getElementById('myVideo').setAttribute('src', video)
+    var videoMap = {
+        'groupmates/music/Papercut.mp3': 'groupmates/video/1.mp4',
+        'groupmates/music/InsideTheFire.mp3': 'groupmates/video/2.mp4',
+        'groupmates/music/HellOfANight.mp3': 'groupmates/video/3.mp4',
+        'groupmates/music/Benzin.mp3': 'groupmates/video/4.mp4'
+    };
+    document.getElementById('myAudio').setAttribute('src', music);
+    document.getElementById('myVideo').setAttribute('src', videoMap[music]);
 }
