@@ -12,7 +12,6 @@ p{color:#666}
 /* CSS styles for the product section */
 .product-section{
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
   align-items:center;
   background-color:#fff;
