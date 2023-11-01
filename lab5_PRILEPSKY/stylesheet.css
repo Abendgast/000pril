@@ -1,0 +1,70 @@
+      /* CSS styles for the header and navigation */
+      header {
+        background-color: #333;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      /* CSS styles for the main content */
+      main {
+        padding: 20px;
+      }
+      
+      h1 {
+        color: #333;
+      }
+      
+      p {
+        color: #666;
+      }
+      
+      /* CSS styles for the product section */
+      .product-section {
+        margin-bottom: 40px;
+      }
+      
+      .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .product-card h2 {
+        color: #333;
+      }
+      
+      .product-card p {
+        color: #666;
+      }
+      
+      /* CSS styles for the photo section */
+      .photo-section {
+        text-align: center;
+        width: 100%;
+        padding-top: 75%; /* 4x3 aspect ratio */
+        position: relative;
+      }
+      
+      .photo-section img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+   
