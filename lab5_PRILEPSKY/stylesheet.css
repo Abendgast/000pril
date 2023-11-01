@@ -101,7 +101,7 @@ p {
 
 /* Additional styling */
 body {
-    background-image: url('images/BG.png');
+    background-image: url('./Images/BG.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
