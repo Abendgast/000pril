@@ -1,90 +1,146 @@
 /* CSS styles for the header and navigation */
-header{background-color:#333;padding:10px}
-nav ul{list-style-type:none;margin:0;padding:0}
-nav ul li{display:inline;margin-right:10px}
-nav ul li a{color:#fff;text-decoration:none}
-
-/* CSS styles for the main content */
-main{padding:20px}
-h1{color:#333}
-p{color:#666}
-
-/* CSS styles for the product section */
-.product-section{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  padding:20px;
-  border-radius:5px;
-  box-shadow:0 2px 5px rgba(0,0,0,.1);
-}
-.photo-section{
-  width: 162px; /* 180px (original width) - 10% */
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  padding: 10px;
-  flex-basis: calc(20% - 10px);
-  margin: 5px;
-  position: relative;
-}
-.photo-section img{
-  width: 100%;
-}
-.caption{
-  text-align:center;
-  margin-top:10px;
-  cursor:pointer;
-  color:#333;
-  font-weight:bold;
-}
-.description{
-  display:none;
-  margin-top:10px;
-  color:#666;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.photo-section:hover .description{
-  display:block;
-  opacity: 1;
-  transform: translateY(0);
-}
-.photo-section:hover{
-  box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-.caption:hover{
-  text-decoration:underline;
-}
-.caption:hover{
-  color:#ff6600;
-}
-.description{
-  color:#333;
-  font-style:italic;
-}
-
-/* Additional styling */
-body{
-  background-image: url('images/BG.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.content{
-  flex: 1;
-}
-
-.footer{
-  background-color: #f5f5f5; /* Footer background color */
-  padding: 20px;
-  text-align: center;
-  flex-shrink: 0;
-}
+header {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* CSS styles for the main content */
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  /* CSS styles for the product section */
+  .product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .photo-section {
+    width: 162px;
+    /* 180px (original width) - 10% */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    flex-basis: calc(20% - 10px);
+    margin: 5px;
+    position: relative;
+  }
+  
+  .photo-section img {
+    width: 100%;
+  }
+  
+  .caption {
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .description {
+    display: none;
+    margin-top: 10px;
+    color: #666;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .photo-section:hover .description {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .photo-section:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+  }
+  
+  .caption:hover {
+    text-decoration: underline;
+  }
+  
+  .caption:hover {
+    color: #ff6600;
+  }
+  
+  .description {
+    color: #333;
+    font-style: italic;
+  }
+  
+  /* Additional styling */
+  body {
+    background-image: url('images/BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .footer {
+    background-color: #f5f5f5;
+    /* Footer background color */
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  /* CSS styles for the welcome message */
+  .welcome-message {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  /* CSS styles for the contact form */
+  .contact input,
+  .contact textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
