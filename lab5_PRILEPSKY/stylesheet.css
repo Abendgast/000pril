@@ -9,8 +9,8 @@ main{padding:20px}h1{color:#333}p{color:#666}
 .photo-section{width:200px;margin:10px;border:1px solid #ccc;border-radius:5px;background-color:#f5f5f5;padding:10px;flex-basis:calc(20% - 10px);margin:5px;position:relative}
 .photo-section img{width:100%}
 .caption{text-align:center;margin-top:10px;cursor:pointer;color:#333;font-weight:bold}
-.description{display:none;margin-top:10px;color:#666}
-.photo-section:hover .description{display:block}
+.description{display:none;margin-top:10px;color:#666;opacity: 0;transform: translateY(100%);transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out}
+.photo-section:hover .description{display:block;opacity: 1;transform: translateY(0)}
 .photo-section:hover{box-shadow:0 2px 10px rgba(0,0,0,.1)}
 .caption:hover{text-decoration:underline}
 .caption:hover{color:#ff6600}
@@ -18,3 +18,12 @@ main{padding:20px}h1{color:#333}p{color:#666}
 
 /* Additional styling */
 body{background-color:#f2f2f2}
+
+/* Modify the width of the photo section to fit 5 photos in a row */
+.product-section {
+  justify-content: flex-start;
+}
+
+.photo-section {
+  flex-basis: calc(20% - 10px);
+}
