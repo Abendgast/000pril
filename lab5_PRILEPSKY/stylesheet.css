@@ -14,7 +14,7 @@ p{color:#666}
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:#fff;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
   padding:20px;
   border-radius:5px;
   box-shadow:0 2px 5px rgba(0,0,0,.1);
@@ -83,9 +83,8 @@ body{
 }
 
 .footer{
-  background-image: url('images/BG.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #f5f5f5; /* Footer background color */
+  padding: 20px;
+  text-align: center;
   flex-shrink: 0;
 }
