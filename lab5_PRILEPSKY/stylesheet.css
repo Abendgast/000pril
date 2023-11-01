@@ -1,89 +1,10 @@
-header {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #f10707;
-    text-decoration: none;
-  }
-  
-  /* CSS styles for the main content */
-  main {
-    padding: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  /* CSS styles for the product section */
-  .product-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .photo-section {
-    width: 200px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f5f5f5;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .photo-section img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .caption {
-    text-align: center;
-    margin-top: 10px;
-    cursor: pointer;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .description {
-    display: none;
-    margin-top: 10px;
-    color: #666;
-  }
-  
-  .caption:hover {
-    text-decoration: underline;
-  }
-  
-  .caption:hover + .description {
-    display: block;
-  }
-  
-  /* Additional design elements */
-  body {
+body {
     background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
   }
   
   header {
+    background-color: #333;
     padding: 20px;
   }
   
@@ -110,48 +31,62 @@ header {
     background-color: #555;
   }
   
-  .product-section {
-    background-color: #fff;
+  main {
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .photo-section {
-    width: 200px;
-    margin: 10px;
-    border: none;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .photo-section img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .caption {
-    text-align: center;
-    margin-top: 10px;
-    cursor: pointer;
+  h1 {
     color: #333;
-    font-weight: bold;
   }
   
-  .description {
-    display: none;
-    margin-top: 10px;
+  p {
     color: #666;
   }
   
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .photo-section {
+      width:200px; 
+      margin:10px; 
+      border:none; 
+      background-color:#fff; 
+      padding:10px; 
+      box-shadow:0,2px,4px,rgba(0,0,0,0.1);
+  }
+  
+  .photo-section img {
+      width:100%; 
+      border-radius:5px; 
+      box-shadow:0,2px,4px,rgba(0,0,0,0.1);
+  }
+  
+  .caption {
+      text-align:center; 
+      margin-top:10px; 
+      cursor:pointer; 
+      color:#333; 
+      font-weight:bold; 
+  }
+  
+  .description {
+      display:none; 
+      margin-top:10px; 
+      color:#666; 
+  }
+  
   .caption:hover {
-    text-decoration: underline;
+      text-decoration:underline; 
   }
   
   .caption:hover + .description {
-    display: block;
+      display:block; 
   }
-  
-  
