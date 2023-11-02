@@ -1,0 +1,93 @@
+h2.curs {
+    font-size: 18pt;
+    font-style: italic;
+    font-family: "Courier New", Courier, mono;
+    color: #46dcf9;
+}
+
+h2.normal {
+    font-size: 16pt;
+    font-style: normal;
+    color: #ff0000;
+}
+
+#bgmagenta {
+    text-indent: 20px;
+    background-color: #1166ff;
+    color: #ffff00;
+}
+
+#fishka {
+    background-color: #cc99ff;
+    color: #3300ff;
+    font-family: serif;
+    font-size: 20pt;
+    font-style: oblique;
+}
+
+#bgyellow {
+    background-color: #ffff00;
+    color: #0000ff;
+    font-family: Verdana, Arial;
+}
+
+div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border: dashed 3px;
+    font-size: 15pt;
+}
+
+div.text {
+    position: absolute;
+    font-family: "serif";
+    background-color: #99ffff;
+    color: red;
+    font-style: oblique;
+    top: 600px;
+    width: 850px;
+    height: 150px;
+    padding: 20px;
+}
+
+#first {
+    top: 850px;
+    left: 50px;
+    background: #ccf0ff;
+    border-color: #0cf;
+}
+
+#second {
+    top: 950px;
+    left: 150px;
+    background: #fff0cc;
+    border-color: #fc0;
+    font-size: 10pt;
+}
+.paragraphs p {
+    margin-left: 60px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.p1 {
+    color: #ff0000;
+    background-color: #ffff00;
+    border-color: #0000ff;
+}
+
+.p2 {
+    color: #00ff00;
+    background-color: #ff00ff;
+    border-color: #00ffff;
+    margin-left: 120px;
+}
+
+.p3 {
+    color: #0000ff;
+    background-color: #00ff00;
+    border-color: #ff0000;
+    margin-left: 180px;
+}
