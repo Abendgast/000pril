@@ -91,3 +91,14 @@ div.text {
     border-color: #ff0000;
     margin-left: 180px;
 }
+.links {
+    position: absolute;
+    top: 0;
+    right: 30;
+}
+
+.links a {
+    display: block;
+    margin-bottom: 100px;
+
+}
