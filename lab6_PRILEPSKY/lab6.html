@@ -55,10 +55,10 @@
         <h2>Зв'яжіться з нами</h2>
         <p>Ласкаво просимо до нашого магазину дитячого одягу. Будь ласка, заповніть форму, щоб з нами зв'язатися.</p>
 
-        <form>
-          <input type="text" placeholder="Ваше ім'я">
-          <input type="email" placeholder="Електронна пошта">
-          <textarea placeholder="Введіть повідомлення"></textarea>
+        <form method="POST" action="https://formspree.io/f/mleyvgoq">
+          <input type="text" name="name" placeholder="Ім'я">
+          <input type="email" name="_replyto" placeholder="Електронна пошта">
+          <textarea name="message" placeholder="Повідомлення"></textarea>
           <button type="submit">Відправити повідомлення</button>
         </form>
       </section>
