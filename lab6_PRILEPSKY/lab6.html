@@ -52,16 +52,41 @@
     </section>
 
     <section class="contact">
-        <h2>Зв'яжіться з нами</h2>
-        <p>Ласкаво просимо до нашого магазину дитячого одягу. Будь ласка, заповніть форму, щоб з нами зв'язатися.</p>
-
-        <form method="POST" action="https://formspree.io/f/mleyvgoq">
-          <input type="text" name="name" placeholder="Ім'я">
-          <input type="email" name="_replyto" placeholder="Електронна пошта">
-          <textarea name="message" placeholder="Повідомлення"></textarea>
-          <button type="submit">Відправити повідомлення</button>
-        </form>
-      </section>
+      <h2>Зв'яжіться з нами</h2>
+      <p>Ласкаво просимо до нашого магазину дитячого одягу. Будь ласка, заповніть форму, щоб з нами зв'язатися.</p>
+    
+      <form id="myForm" method="POST" action="https://formspree.io/f/mleyvgoq">
+        <input type="text" name="name" placeholder="Ім'я">
+        <input type="email" name="_replyto" placeholder="Електронна пошта">
+        <textarea name="message" placeholder="Повідомлення"></textarea>
+        <button type="submit">Відправити повідомлення</button>
+      </form>
+    </section>
+    
+    <script>
+    document.getElementById("myForm").addEventListener("submit", function(event){
+      event.preventDefault()
+    
+      var form = event.target
+      var formData = new FormData(form)
+      var xhr = new XMLHttpRequest()
+      
+      xhr.open(form.method, form.action)
+      xhr.setRequestHeader("Accept", "application/json")
+      
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return
+        if (xhr.status === 200) {
+          form.reset()
+          alert("Дякуємо за ваше повідомлення!")
+        } else {
+          alert("Щось пішло не так, спробуйте ще раз.")
+        }
+      }
+      
+      xhr.send(formData)
+    })
+    </script>
 
 </body>
 </html>
