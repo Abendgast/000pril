@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Демонстрація властивості clear</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			background-color: #ccc;
+			text-align: center;
+			line-height: 200px;
+			font-size: 24px;
+		}
+
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box clear">4</div>
+		<div class="box">5</div>
+		<div class="box">6</div>
+		<div class="box">7</div>
+		<div class="box">8</div>
+	</div>
+</body>
+</html>

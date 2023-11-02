@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Демонстрація властивості position</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			color: white;
+			text-shadow: 1px 1px 1px black;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			position: relative;
+		}
+
+		.static {
+			background-color: #4CAF50;
+		}
+
+		.relative {
+			background-color: #2196F3;
+			top: 50px;
+			left: 50px;
+		}
+
+		.absolute {
+			background-color: #f44336;
+			top: 50px;
+			left: 50px;
+			position: absolute;
+		}
+
+		.fixed {
+			background-color: #FFC107;
+			top: 50px;
+			left: 50px;
+			position: fixed;
+		}
+
+		.sticky {
+			background-color: #9C27B0;
+			top: 50px;
+			left: 50px;
+			position: sticky;
+			position: -webkit-sticky;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box static">static</div>
+		<div class="box relative">relative</div>
+		<div class="box absolute">absolute</div>
+		<div class="box fixed">fixed</div>
+		<div class="box sticky">sticky</div>
+	</div>
+</body>
+</html>
