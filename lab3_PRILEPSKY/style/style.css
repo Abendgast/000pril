@@ -28,12 +28,11 @@ p.ex5 {
 }
 
 
-
 body.body5 {
     background-image: url("../images/ball.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-   
+    background-position: center;
 }
 
 p.ex6 {
