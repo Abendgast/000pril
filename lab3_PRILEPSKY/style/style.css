@@ -30,10 +30,10 @@ p.ex5 {
 
 
 body.body5 {
-    background-image: url("../images/ball.jpg"), url("../images/ball.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/ball.jpg");
+    background-repeat: repeat-x;
     background-attachment: fixed;
-    background-position: center, 50px 100px;
+   
 }
 
 p.ex6 {
@@ -109,5 +109,4 @@ p {
 #container * {
     border: 1px solid black;
 }
-
 
