@@ -80,7 +80,7 @@ p {
     border-image-repeat: round;
     border-image-outset: 5px;
     transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transform: skew(-0deg, 0) rotateZ(-15deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: skew(-0deg, 0) rotateZ(5 deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform-origin: center center;
 }
 
