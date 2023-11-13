@@ -164,7 +164,7 @@ p {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-
+ 
 .photo-section:hover .description {
     opacity: 1;
     transform: translateY(0);
