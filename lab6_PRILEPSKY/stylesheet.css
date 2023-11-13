@@ -45,7 +45,7 @@ p {
 }
 
 .product-section {
-    margin-top: 70px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ p {
 }
 
 .photo-section {
-    margin-top: 50px;
+    margin-top: 90px;
     width: 162px;
     margin: 10px;
     border: 1px solid #ccc;
