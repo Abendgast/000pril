@@ -6,7 +6,9 @@ body {
     display: flex;
     flex-direction: column;
     transition: background-color 0.5s ease-in-out;
+    transform-origin: center center;
 }
+
 
 header {
     background-color: #333;
@@ -56,7 +58,7 @@ p {
     border: 10px solid;
     border-image: linear-gradient(to bottom, #007BFF, #40E0D0) 1;
     transition: box-shadow 0.3s ease-in-out, border 0.4s ease-in-out, background-color 0.3s ease-in-out;
-    transform: matrix(1, 0.2, 0, 1, 0, 0); 
+    transform: matrix(1, 0.2, 0, 1, 0, 0) skew(0, 0) rotateZ(0deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) skew(0, 0);
 }
 
 .photo-section {
@@ -78,7 +80,8 @@ p {
     border-image-repeat: round;
     border-image-outset: 5px;
     transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transform: skew(-0deg, 0);
+    transform: skew(-0deg, 0) rotateZ(-15deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: center center;
 }
 
 .photo-section img {
