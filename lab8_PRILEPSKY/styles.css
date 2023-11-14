@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: auto;
+  }
+  
+  .block {
+    box-sizing: border-box;
+    height: 70%;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000;
+    overflow: auto;
+  }
+  
+  .blue-horizontal {
+    background-color: blue;
+  }
+  
+  .blue-vertical {
+    background-color: blue;
+    transform: rotate(90deg);
+  }
+  
+  .yellow-connect {
+    background-color: yellow;
+    width: 62%;
+  }
+  
+  .yellow-bottom {
+    background-color: yellow;
+    width: 30%;
+  }
+  
