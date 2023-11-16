@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вебформи. Псевдоелементи. Псевдокласи.</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <h2>Демонстрація однорядкового текстового поля веб-форми:
+    </h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            <label for="fname">Ім'я:</label><br>
+            <input type="text" id="fname" name="fname" value="" placeholder="Введіть ваше ім'я" required><br>
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Форма, що використовує багаторядкову текстову область.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            <label for="message">Повідомлення:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Введіть ваше повідомлення тут" required></textarea><br>
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Демонстрація значень password, email, range властивості type тегу input.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="password">Пароль:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="range">Range:</label><br>
+            <input type="range" id="range" name="range" min="1" max="100" oninput="updateRangeValue(this.value)">
+            <p id="rangeValue"></p><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    
+    <script>
+    function updateRangeValue(value) {
+        document.getElementById("rangeValue").innerHTML = "Поточне значення: " + value;
+    }
+    </script>
+    <br>
+    <br>
+    <h2>Форма, що використовує два незалежні перемикача єдиного вибору (radio) і кнопку відправки даних.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="option1">Опція 1:</label>
+            <input type="radio" id="option1" name="option1" value="option1"><br>
+            
+            <label for="option2">Опція 2:</label>
+            <input type="radio" id="option2" name="option2" value="option2"><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Приклад активізації за замовчуванням одного з варіантів вибору, що надаються перемикачем.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="option1">Опція 1:</label>
+            <input type="radio" id="option1" name="option" value="option1" checked><br>
+            
+            <label for="option2">Опція 2:</label>
+            <input type="radio" id="option2" name="option" value="option2"><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Демонстрація використання прапорців для множинного вибору варіантів із запропонованого переліку.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="option1">Опція 1:</label>
+            <input type="checkbox" id="option1" name="option1" value="option1"><br>
+            
+            <label for="option2">Опція 2:</label>
+            <input type="checkbox" id="option2" name="option2" value="option2"><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2><form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="grouped-options">Групові опції:</label>
+            <select id="grouped-options" name="grouped-options">
+                <optgroup label="Група 1">
+                    <option value="option1">Опція 1</option>
+                    <option value="option2">Опція 2</option>
+                </optgroup>
+                <optgroup label="Група 2">
+                    <option value="option3">Опція 3</option>
+                    <option value="option4">Опція 4</option>
+                </optgroup>
+            </select><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    </h2>
+    <br>
+    <br>
+    <h2>Демонстрація списку множинного вибору</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="multi-select">Множинний вибір:</label><br>
+            <select id="multi-select" name="multi-select" multiple size="4">
+                <option value="option1" selected>Опція 1</option>
+                <option value="option2">Опція 2</option>
+                <option value="option3">Опція 3</option>
+                <option value="option4">Опція 4</option>
+                <option value="option5">Опція 5</option>
+                <option value="option6">Опція 6</option>
+            </select><br>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Приклад форми з можливістю скидання в початковий стан.</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" value="" placeholder="Введіть ваше ім'я" required><br>
+            
+            <input type="submit" value="Надіслати">
+            <input type="reset" value="Очистити форму">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Демонстрація використання семантично нейтральній кнопки і зв'язки її з обробником події</h2>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Форма:</legend>
+            
+            <input type="button" value="Натисни мене!" onClick='alert("О, ти натиснув мене!!!")'>
+            
+            <input type="submit" value="Надіслати">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <h2>Групування елементів</h2>
+    <form action="/submit_form" method="post">
+    <fieldset>
+        <legend>Інформація про користувача:</legend>
+        
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Налаштування:</legend>
+        
+        <label for="notifications">Сповіщення:</label><br>
+        <input type="checkbox" id="notifications" name="notifications"><br>
+        
+        <label for="theme">Тема:</label><br>
+        <select id="theme" name="theme">
+            <option value="light">Світла</option>
+            <option value="dark">Темна</option>
+        </select><br>
+    </fieldset>
+    
+    <input type="submit" value="Надіслати">
+</form>
+<br>
+<br>
+<br>
+<br>
+<h2>Демонстрація виконання псевдоелементів</h2>
+<style>
+    p.myClass::after {
+      content: " (кінець абзацу)";
+      color: blue;
+    }
+  
+    p.myClass::before {
+      content: "(початок абзацу) ";
+      color: red;
+    }
+  
+    p.myClass::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  
+    p.myClass::first-line {
+      text-decoration: underline;
+    }
+  </style>
+  
+  <p class="myClass">Це приклад використання псевдоелементів в HTML. Ви можете бачити, як вони змінюють стиль певних частин абзацу.</p>
+  <p class="myClass">Новий абзац</p>
+  <p class="myClass">Ще один новий абзац</p>
+<br>
+<br>
+<br>
+<br>
+<h2>Демонстрація виконання псевдокласів</h2>
+<h4>За допомогою псевдокласів ':active,:hover, :link, :visited' можна стилізувати посилання, наприклад</h4>
+<h5>Це посилання підсвічується синім кольором, доки його не відкрили. Після відвідання воно буде відсвічено фіолетовим. При наведенні воно червоне, коли активне - зелене:</h6>
+<p><a href=“https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0”>Вікіпедія</a>.</p>
+<br>
+<br>
+<br>
+<br>
+<h2>Демонстрація виконання псевдокласів :valid, :invalid :in-range :optional :enabled</h2>
+
+<style>
+    input.myClass:valid {
+      border: 2px solid green;
+    }
+  
+    input.myClass:invalid {
+      border: 2px solid red;
+    }
+  
+    input.myClass:in-range {
+      background-color: lightgreen;
+    }
+  
+    input.myClass:optional {
+      background-color: lightblue;
+    }
+  
+    input.myClass:enabled {
+      opacity: 1;
+    }
+  </style>
+
+
+<form>
+    <label for="username">Ім'я користувача (тільки латинські літери, від 4 до 8 символів):</label><br>
+    <input type="text" id="username" name="username" pattern="[A-Za-z]{4,8}" required class="myClass"><br>
+    <label for="age">Вік (від 18 до 99):</label><br>
+    <input type="number" id="age" name="age" min="18" max="99" required class="myClass"><br>
+    <label for="email">Електронна пошта (необов'язково):</label><br>
+    <input type="email" id="email" name="email" class="myClass"><br>
+    <input type="submit" value="Надіслати">
+  </form>
+<br>
+<h3>У цьому прикладі:</h3>
+<h4>1. Поле “Ім’я користувача” має зелену рамку, коли введено вірне значення, і червону рамку, коли введено невірне значення.</h4>
+<h4>2. Поле “Вік” має світло-зелений фон, коли введено значення в діапазоні від 18 до 99.</h4>
+<h4>3. Поле “Електронна пошта” має світло-синій фон, оскільки воно не є обов’язковим.</h4>
+<h4>4. Усі поля, які можна редагувати, мають повну непрозорість.</h4>   
+
+</body>
+</html>
