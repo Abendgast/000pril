@@ -78,40 +78,26 @@
     </div>
 </div>
 
-<!-- 7. Carousel/Slider -->
-<div class="d-flex justify-content-center">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width: 600px;">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/HTML.png" alt="HTML" class="d-block w-100">
-            </div>
-
-            <div class="carousel-item">
-                <img src="images/CSSs.png" alt="CSS" class="d-block w-100">
-            </div>
-
-            <div class="carousel-item">
-                <img src="images/JS.png" alt="JavaScript" class="d-block w-100">
-            </div>
+<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/HTML.png" class="d-block w-25 mx-auto rounded" alt="Перший слайд">
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="carousel-item">
+            <img src="Images/CSSs.png" class="d-block w-25 mx-auto rounded" alt="Другий слайд">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/JS2.png" class="d-block w-25 mx-auto rounded" alt="Третій слайд">
+        </div>
     </div>
-</div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Попередній</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Наступний</span>
+    </a>
 
 
 
