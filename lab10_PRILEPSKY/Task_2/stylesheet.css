@@ -1,0 +1,40 @@
+.container {
+    background: linear-gradient(to right, #007bff, #6c757d);
+    color: white;
+  }
+  
+  .card {
+    background: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 2em;
+  }
+  
+  .card-title {
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .card-text {
+    transition: color 0.3s ease;
+  }
+  
+  .btn {
+    background: white;
+    color: #007bff;
+    border: none;
+  }
+  
+  .btn:hover {
+    background: #007bff;
+    color: white;
+  }
