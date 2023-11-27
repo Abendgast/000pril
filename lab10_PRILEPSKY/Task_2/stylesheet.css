@@ -1,3 +1,4 @@
+
 .container {
     background: linear-gradient(to bottom, #7c8791, #ffffff);
     color: white;
@@ -51,9 +52,4 @@
     position: relative;
     top: -50px;
 }
-body {
-    background-image: url('/Images/BG.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
