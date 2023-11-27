@@ -52,7 +52,7 @@
     top: -50px;
 }
 body {
-    background-image: url('/images/BG.jpg'); /*BG */
+    background-image: url('/Images/BG.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
