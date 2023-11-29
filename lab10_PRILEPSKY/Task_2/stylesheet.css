@@ -1,7 +1,7 @@
 
 .container {
     background: linear-gradient(to bottom, #a5a5a5, #ffffff);
-    color: white;
+    color: (#a5a5a5);
     font-family: 'Arial', sans-serif;
 }
 
